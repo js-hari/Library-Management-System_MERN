@@ -199,7 +199,7 @@ class AuthController {
         to: user.email,
         from: "ggclibrary@gmail.com",
         subject: "GGC Library Password Reset Link",
-        text: `Hello ${user.name} ! Your password reset link is  http://localhost:5173/new-password/${resetToken}/, Click on that link in order to change password`,
+        text: `Hello ${user.name} ! Your password reset link is  https://library-management-system-frontend-v7cc.onrender.com/new-password/${resetToken}/, Click on that link in order to change password`,
       });
       return res.status(200).json({ msg: "Email send...." });
     } catch (error) {
