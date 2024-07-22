@@ -29,7 +29,7 @@ app.use(express.json({ limit: "5mb" }));
 
 const corsOptions = {
   credentials: true,
-  origin: ["http://localhost:5173"],
+  origin: ["https://library-management-system-frontend-v7cc.onrender.com"],
 };
 app.use(cors(corsOptions));
 app.use(express.urlencoded({ extended: false }));
