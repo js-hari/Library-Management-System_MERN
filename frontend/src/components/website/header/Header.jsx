@@ -33,20 +33,20 @@ const Header = () => {
 
   return (
     <header>
-      <div className="topbar bg__secondary text__color">
+      <div className="topbar">
         <span>Discover, Learn, Thrive: Dive into our Library!</span>
         <div>
           <BiPhoneCall />
-          <span>030339845224</span>
+          <span>+91-9452111722</span>
           <AiOutlineMail />
-          <span>ggclib@gmail.com</span>
+          <span>hbsingh722@gmail.com</span>
         </div>
       </div>
 
       <nav className="bg__accent">
         <div className="logo text__primary">
           <GiBookAura className="logo__icon" />
-          <span>GGC Library</span>
+          <span>SELF Library</span>
         </div>
         <div className="center">
           <NavLink to="/" className="text__color ">

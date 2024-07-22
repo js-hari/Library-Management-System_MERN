@@ -103,7 +103,7 @@ const Books = () => {
             <h3>BOOKS</h3>
             <p>List of books</p>
           </div>
-          <form className="input__box bg__accent" tabindex="0">
+          <form className="input__box bg__accent" tabIndex="0">
             <input
               type="text"
               placeholder="Search books...."
@@ -124,7 +124,7 @@ const Books = () => {
             {booksData?.books.length !== 0 ? (
               booksData?.books?.map((book) => {
                 return (
-                  <div className="card bg__accent">
+                  <div className="card bg__accent" key={book?._id}>
                     <img
                       src={
                         book?.imagePath

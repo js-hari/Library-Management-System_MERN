@@ -27,7 +27,7 @@ const ContactUs = () => {
 
     toast.promise(promise, {
       loading: "Sending...",
-      success: (data) => {
+      success: () => {
         setFormData({...formData,message:""});
         return "Message sent successfully..";
       },

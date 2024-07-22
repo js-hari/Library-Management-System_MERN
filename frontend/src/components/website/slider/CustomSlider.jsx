@@ -35,6 +35,8 @@ const settings = {
   ],
 };
 
+
+
 const CustomSlider = ({ data }) => {
   const slider = useRef(null);
 
@@ -64,7 +66,7 @@ const CustomSlider = ({ data }) => {
         <Slider ref={slider} {...settings}>
           {data?.map((book) => {
             return (
-              <div className="book__card bg__accent">
+              <div className="book__card bg__accent" key={book._id}>
                 <img
                   src={
                     book?.imagePath

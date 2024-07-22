@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   addNewAlmirah,
   exportAlmirahs,
@@ -6,7 +6,7 @@ import {
   updateAlmirah,
 } from "../../../http";
 import { toast } from "react-hot-toast";
-import { FaEdit, FaEye, FaTrash } from "react-icons/fa";
+import { FaEdit,} from "react-icons/fa";
 import { Modal, Pagination } from "../../../components";
 
 const ManageAlmirah = () => {
@@ -47,7 +47,7 @@ const ManageAlmirah = () => {
     });
     toast.promise(promise, {
       loading: "Saving...",
-      success: (data) => {
+      success: () => {
         setFormData(initialState);
         fetchAlmirahs();
         setShowAddNewModel(false);
@@ -68,7 +68,7 @@ const ManageAlmirah = () => {
     });
     toast.promise(promise, {
       loading: "Updating...",
-      success: (data) => {
+      success: () => {
         setFormData(initialState);
         fetchAlmirahs();
         setShowUpdateModel(false);

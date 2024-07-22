@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   addNewBatch,
   exportBatches,
@@ -49,7 +49,7 @@ const ManageBatch = () => {
     });
     toast.promise(promise, {
       loading: "Saving...",
-      success: (data) => {
+      success: () => {
         setFormData(initialState);
         fetchData();
         setShowAddNewModel(false);
@@ -71,7 +71,7 @@ const ManageBatch = () => {
     });
     toast.promise(promise, {
       loading: "Updating...",
-      success: (data) => {
+      success: () => {
         setFormData(initialState);
         fetchData();
         setShowUpdateModel(false);

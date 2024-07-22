@@ -5,7 +5,11 @@ header {
   .topbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 3px 15px;
+    background-color:#3E4396;
+    height: 50px;
+    color: #000;
 
     @include md {
       justify-content: center;
@@ -15,7 +19,7 @@ header {
     div {
       display: flex;
       align-items: center;
-      column-gap: 8px;
+      column-gap: 14px;
 
       @include md {
         display: none;

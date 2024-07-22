@@ -1,6 +1,15 @@
 import "./datalist.scss";
 
-const DataList = ({heading,subheading,data,columns,keys}) => {
+import PropTypes from 'prop-types';
+
+const DataList = ({heading,subheading,data,columns}) => {
+DataList.propTypes = {
+  heading: PropTypes.string.isRequired,
+  subheading: PropTypes.string.isRequired,
+  data: PropTypes.array.isRequired,
+  columns: PropTypes.array.isRequired,
+  keys: PropTypes.array.isRequired
+};
   console.log(data);
   return (
     <div className="datalist__wrapper">
@@ -8,7 +17,7 @@ const DataList = ({heading,subheading,data,columns,keys}) => {
         <span>{subheading}</span>
 
         <div className="table__wrapper bg__accent">
-            <table cellspacing="0" cellpadding="0">
+            <table cellSpacing="0" cellPadding="0">
                 <thead>
                   <tr className="bg__secondary">
                     <td>Sr#</td>
@@ -21,15 +30,15 @@ const DataList = ({heading,subheading,data,columns,keys}) => {
                 </thead>
                 <tbody>
                   {
-                    data?.map((i)=>{
-                      return <tr>
-                    <td>1</td>
-                    <td>101</td>
-                    <td>Data Sturcture and Algorithm</td>
-                    <td>John Doe</td>
-                    <td>Computer Science</td>
-                    <td>13 Fab 2023</td>
-                  </tr>
+                    data?.map((i, index)=>{
+                      return <tr key={index}>
+                        <td>1</td>
+                        <td>101</td>
+                        <td>Data Sturcture and Algorithm</td>
+                        <td>John Doe</td>
+                        <td>Computer Science</td>
+                        <td>13 Fab 2023</td>
+                      </tr>
                     })
                   }
                 </tbody>

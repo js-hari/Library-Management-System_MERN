@@ -14,14 +14,14 @@ class AlmirahController {
         return next(ErrorHandlerService.alreadyExist());
       }
       const document = await AlmirahModel.create(req.body);
-      return res.status(201).json(document);
+      return res.status(201).json(document);a
     } catch (error) {
       next(error);
     }
   }
   async getAlmirahs(req, res, next) {
     const {page,limit,skip} = paginationService(req);
-    /* SEARCH FILTER */
+
     const q = req.query.q || "";
     const regexQuery = new RegExp(q, "i");
     const filter = [

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 import {
   addNewBook,
@@ -48,7 +48,7 @@ const AddNewBook = () => {
 
     toast.promise(promise, {
       loading: "Creating...",
-      success: (data) => {
+      success: () => {
         setFormData(initailState);
         return "Book created successfully..";
       },

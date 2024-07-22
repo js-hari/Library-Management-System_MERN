@@ -10,16 +10,16 @@ const Footer = () => {
         <div className="box1">
           <div className="logo text__primary">
             <GiBookAura className="icon" />
-            <h4>GGC Library</h4>
+            <h4>SELF Library</h4>
           </div>
           <p style={{ marginTop: "8px", lineHeight: "1.5rem" }}>
-            Gateway to knowledge, discovery, and lifelong learning for all GGC
-            students, faculty, and staff.: A welcoming and inclusive space for
+            Gateway to knowledge, discovery, and lifelong learning for all AKGEC
+            students, faculty, and staff : A welcoming and inclusive space for
             all learners to come together and learn.
           </p>
         </div>
         <div className="box2">
-          <h4>USEFULL LINKS</h4>
+          <h4>USEFUL LINKS</h4>
           <Link to="/" className="text__color">
             Home
           </Link>
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
 
         <div className="box3">
-          <h4>OTHER USEFULL LINKS</h4>
+          <h4>OTHER USEFUL LINKS</h4>
           <Link to="/" className="text__color">
             Books
           </Link>
@@ -46,7 +46,7 @@ const Footer = () => {
             Dashboard
           </Link>
           <Link to="/login" className="text__color">
-            Forget Password
+            Forgot Password
           </Link>
         </div>
 
@@ -54,21 +54,21 @@ const Footer = () => {
           <h4>CONTACT</h4>
           <div className="item">
             <AiOutlineHome className="icon__home" />
-            <span>Govt.Graduate College Taneyala, Jhelum</span>
+            <span>AKGEC, Ghaziabad</span>
           </div>
           <div className="item">
             <AiOutlineMail className="icon" />
-            <span>ggclib@gmail.com</span>
+            <span>hbsingh722@akgec.ac.in</span>
           </div>
           <div className="item">
             <AiOutlinePhone className="icon" />
-            <span>03445047347234</span>
+            <span>+91-9452111722</span>
           </div>
         </div>
       </div>
       <div className="bottom">
         <span>
-          &copy;2023 Copyright : GGC Library Management System, Jhelum
+          &copy;2024 Copyright : @hari_tx
         </span>
       </div>
     </footer>

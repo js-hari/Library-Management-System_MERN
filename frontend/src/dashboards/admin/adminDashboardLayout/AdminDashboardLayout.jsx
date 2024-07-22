@@ -1,4 +1,3 @@
-import React from "react";
 import { MdCancel, MdDashboard, MdPendingActions } from "react-icons/md";
 import {
   FaBook,
@@ -14,7 +13,7 @@ import { SiBookstack } from "react-icons/si";
 import { useState } from "react";
 import { AppBar, SideBar } from "../../../components";
 import { Outlet } from "react-router-dom";
-import { AiFillBell, AiFillMessage } from "react-icons/ai";
+import { AiFillMessage } from "react-icons/ai";
 
 const menu = [
   {

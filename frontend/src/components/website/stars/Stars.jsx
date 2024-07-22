@@ -1,4 +1,5 @@
 import {FaStarHalfAlt,FaStar,FaRegStar} from 'react-icons/fa';
+import PropTypes from 'prop-types';
 
 function Stars({rating}) {
     const stars = Array.from(({length:5}),(_,i)=>{
@@ -12,5 +13,9 @@ function Stars({rating}) {
     </div>
   )
 }
+
+Stars.propTypes = {
+  rating: PropTypes.number.isRequired
+};
 
 export default Stars

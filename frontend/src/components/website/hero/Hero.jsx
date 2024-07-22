@@ -1,6 +1,13 @@
 import "./hero.scss";
+import PropTypes from 'prop-types';
 
 const Hero = ({ title, text, image, reverse }) => {
+  Hero.propTypes = {
+    image: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    reverse: PropTypes.bool,
+  };
   return (
     <section className="hero__wrapper">
       {reverse ? (

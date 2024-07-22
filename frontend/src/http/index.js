@@ -141,7 +141,7 @@ export const deleteBook = (_id) => api.delete(`/books/${_id}`);
 export const getBook = (_id) => api.get(`/books/${_id}`);
 export const getAllCategoriesWithoutPagination = () =>
   api.get(`/categories?limit=200`);
-export const getAllAlmirahsWithoutPagination = (query, page) =>
+export const getAllAlmirahsWithoutPagination = (/*query, page*/) =>
   api.get(`/almirahs?limit=200`);
 
 /* EBOOK REQUESTS */

@@ -8,8 +8,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { FiSun } from "react-icons/fi";
 import { toggleTheme } from "../../../store/slices/themeSlice";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types'; // Add this line to import PropTypes
+
 function AppBar({ open, setOpen }) {
- 
+  // ...
   const dispatch = useDispatch();
   const { theme } = useSelector((state) => state.theme);
  
@@ -29,7 +31,7 @@ function AppBar({ open, setOpen }) {
         {/* logo */}
         <Link to="/" className="logo text__primary">
           <GiBookAura className="logo__icon" />
-          <span>GGC Library</span>
+          <span>AKGEC Library</span>
         </Link>
       </div>
 
@@ -48,5 +50,10 @@ function AppBar({ open, setOpen }) {
     </div>
   );
 }
+
+AppBar.propTypes = {
+  open: PropTypes.bool.isRequired,
+  setOpen: PropTypes.func.isRequired,
+};
 
 export default AppBar;

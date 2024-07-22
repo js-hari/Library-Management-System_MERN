@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Routes, Route, Outlet, Navigate } from "react-router-dom";
 import {
   AboutUs,
@@ -72,7 +72,7 @@ const App = () => {
         setStatus(STATUSES.ERROR);
       }
     })();
-  }, []);
+  }, [dispatch]);
 
   if (status === STATUSES.LOADING) {
     return <Loader />;

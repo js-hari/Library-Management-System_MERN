@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {toast} from "react-hot-toast";
 import { addNewEBook, getAllCategoriesWithoutPagination } from "../../../http";
 import { useNavigate } from "react-router-dom";
@@ -44,7 +44,7 @@ const AddNewEBook = () => {
 
     toast.promise(promise, {
         loading: "Creating...",
-        success: (data) => {
+        success: () => {
           setFormData(initailState);
           return "Book created successfully..";
         },

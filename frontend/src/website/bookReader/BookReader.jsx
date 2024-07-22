@@ -18,6 +18,7 @@ const BookReader = () => {
   /* DELETE SOME SLOTS FROM TOOLBAR */
   const transform = (slot) => ({
     ...slot,
+    
     // These slots will be empty
     Download: () => <></>,
     SwitchTheme: () => <></>,

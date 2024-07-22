@@ -100,7 +100,7 @@ const EBooks = () => {
             <h3>EBOOKS</h3>
             <p>List of digital books</p>
           </div>
-          <form className="input__box bg__accent" tabindex="0">
+          <form className="input__box bg__accent" tabIndex="0">
             <input type="text" placeholder="Search books...." value={query.title} onChange={(e)=>{setQuery({...query,title : e.target.value})}} />
             <AiOutlineSearch />
           </form>
@@ -110,7 +110,7 @@ const EBooks = () => {
           <div className="card__wrapper">
             {booksData?.books.length !== 0 ? booksData?.books?.map((book) => {
               return (
-                <div className="card bg__accent">
+                <div className="card bg__accent" key={book?._id}>
                   <img src={book?.imagePath ? `${BASE_URL}/${book?.imagePath}` : defaultCover} alt="Book Image Not Found" />
                   <div className="content">
                     <h5>{book?.title}</h5>

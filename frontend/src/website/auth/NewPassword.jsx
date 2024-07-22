@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import {toast} from "react-hot-toast";
 import { resetPassword } from '../../http';
@@ -20,7 +19,7 @@ const NewPassword = () => {
 
       toast.promise(promise,{
         loading : 'Loading..',
-        success : (data) => {
+        success : () => {
             navigate("/login");
             return "Password changed successfully !"
         },

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { forgetPassword } from '../../http';
 import {toast} from "react-hot-toast";
@@ -14,7 +13,7 @@ const ForgetPassword = () => {
       promise,
       {
         loading : 'Loading',
-        success : (data) => {
+        success : () => {
           navigate("/email-sent");
           return "Email Sent"
         },

@@ -1,7 +1,6 @@
 import profileImage from "../../../assets/avatar.svg";
 import { useState } from "react";
 import { BASE_URL, getUserDetails } from "../../../http";
-import { toast } from "react-hot-toast";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 

@@ -7,6 +7,7 @@ const APP_PORT = process.env.APP_PORT || 4000;
 const MONGO_DB_URI = process.env.MONGO_DB_URI;
 const DEBUG_MODE = process.env.DEBUG_MODE;
 const BASE_URL = process.env.BASE_URL;
+
 /* FOR EMAIL */
 const SMTP_HOST = process.env.SMTP_HOST;
 const SMTP_PORT = process.env.SMTP_PORT;

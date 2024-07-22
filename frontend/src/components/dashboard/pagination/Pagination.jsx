@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const Pagination = ({ currentPage, setCurrentPage, data }) => {
   const startIndex = (currentPage - 1) * data?.limit + 1;
